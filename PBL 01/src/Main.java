@@ -21,7 +21,7 @@ public class Main {
     }
     private static void doCalcAndPrint(int firstNumber, int secondNumber,
                                        OperationOption selectedOption) {
-        int result = 0;
+        double result = 0;
         switch (selectedOption) {
             case Sum -> {
                 result = firstNumber + secondNumber;
@@ -30,7 +30,7 @@ public class Main {
                 result = firstNumber * secondNumber;
             }
             case Divide -> {
-                result = firstNumber / secondNumber;
+                result = (double) firstNumber / secondNumber;
             }
             case Minus -> {
                 result = firstNumber - secondNumber;
